@@ -1,0 +1,455 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card border-0 shadow-sm mb-5">
+
+    <div class="card-body text-center py-5">
+
+        <div style="font-size:80px;">
+
+            ₿
+
+        </div>
+
+        <h1 class="display-4 fw-bold mt-2">
+
+            Bitcoin AI
+
+        </h1>
+
+        <h5 class="text-primary mb-3">
+
+            Artificial Intelligence Based Prediction System
+
+        </h5>
+
+        <p class="lead text-muted">
+
+            Predicting the next-day Bitcoin price using
+            Long Short-Term Memory (LSTM) and historical
+            BTC-USD market data.
+
+        </p>
+
+    </div>
+
+</div>
+
+<div class="card shadow-sm border-0 mb-4">
+
+    <div class="card-body">
+
+        <h3 class="fw-bold">
+
+            📌 About This Project
+
+        </h3>
+
+        <hr>
+
+        <p class="fs-5">
+
+            This application was developed to predict the next-day Bitcoin
+            price using the Long Short-Term Memory (LSTM) algorithm.
+            The prediction model is trained using historical BTC-USD
+            data obtained from Yahoo Finance and presented through
+            an interactive web dashboard.
+
+        </p>
+
+    </div>
+
+</div>
+
+<div class="card shadow-sm border-0 mb-4">
+
+    <div class="card-body">
+
+        <h3 class="fw-bold">
+
+            ⚙️ Technologies Used
+
+        </h3>
+
+        <hr>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="dashboard-card text-center p-4">
+
+                    🐍
+
+                    <h5 class="mt-3">
+
+                        Python
+
+                    </h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="dashboard-card text-center p-4">
+
+                    🌐
+
+                    <h5 class="mt-3">
+
+                        Flask
+
+                    </h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="dashboard-card text-center p-4">
+
+                    🧠
+
+                    <h5 class="mt-3">
+
+                        TensorFlow
+
+                    </h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="dashboard-card text-center p-4">
+
+                    🗄️
+
+                    <h5 class="mt-3">
+
+                        MySQL
+
+                    </h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="dashboard-card text-center p-4">
+
+                    📊
+
+                    <h5 class="mt-3">
+
+                        Chart.js
+
+                    </h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="dashboard-card text-center p-4">
+
+                    🎨
+
+                    <h5 class="mt-3">
+
+                        Bootstrap 5
+
+                    </h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="card shadow-sm border-0 mb-4">
+
+    <div class="card-body">
+
+        <h3 class="fw-bold">
+
+            🧠 Machine Learning Model
+
+        </h3>
+
+        <hr>
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <table class="table">
+
+                    <tr>
+                        <th width="45%">Algorithm</th>
+                        <td>LSTM (Long Short-Term Memory)</td>
+                    </tr>
+
+                    <tr>
+                        <th>Dataset</th>
+                        <td>BTC-USD Yahoo Finance</td>
+                    </tr>
+
+                    <tr>
+                        <th>Window Size</th>
+                        <td>60 Days</td>
+                    </tr>
+
+                    <tr>
+                        <th>Epoch</th>
+                        <td>50</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <table class="table">
+
+                    <tr>
+                        <th width="45%">Features</th>
+                        <td>Open, High, Low, Close, Volume</td>
+                    </tr>
+
+                    <tr>
+                        <th>Optimizer</th>
+                        <td>Adam (Adaptive Moment Estimation)</td>
+                    </tr>
+
+                    <tr>
+                        <th>Loss Function</th>
+                        <td>Mean Squared Error</td>
+                    </tr>
+
+                    <tr>
+                        <th>Output</th>
+                        <td>Next-Day Bitcoin Price</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="card shadow-sm border-0 mb-4">
+
+    <div class="card-body">
+
+        <h3 class="fw-bold">
+
+            🚀 Main Features
+
+        </h3>
+
+        <hr>
+
+        <div class="row text-center g-4">
+
+            <div class="col-md-4">
+
+                <div class="dashboard-card p-4">
+
+                    📈
+
+                    <h5 class="mt-3">
+
+                        Prediction Dashboard
+
+                    </h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="dashboard-card p-4">
+
+                    🤖
+
+                    <h5 class="mt-3">
+
+                        AI Market Analysis
+
+                    </h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="dashboard-card p-4">
+
+                    📜
+
+                    <h5 class="mt-3">
+
+                        Prediction History
+
+                    </h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="dashboard-card p-4">
+
+                    📊
+
+                    <h5 class="mt-3">
+
+                        Visualization
+
+                    </h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="dashboard-card p-4">
+
+                    💾
+
+                    <h5 class="mt-3">
+
+                        MySQL Database
+
+                    </h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="dashboard-card p-4">
+
+                    ⚡
+
+                    <h5 class="mt-3">
+
+                        Automatic Prediction
+
+                    </h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="card shadow-sm border-0">
+
+    <div class="card-body text-center">
+
+        <h3 class="fw-bold">
+
+            👨‍💻 Developer
+
+        </h3>
+
+        <hr>
+
+        <h4>
+
+            Calvin Wijaya
+
+        </h4>
+
+        <p class="mb-1">
+
+            Informatika
+
+        </p>
+
+        <p class="mb-1">
+
+            Universitas Gunadarma
+
+        </p>
+
+        <p class="mb-1">
+
+            Universitas Gunadarma
+
+        </p>
+
+        <small class="text-muted">
+
+            Project PI • 2026
+
+        </small>
+
+    </div>
+
+</div>
+
+<hr class="mt-5">
+
+<footer class="text-center text-muted mb-4">
+
+    <h5>
+
+        ₿ Bitcoin AI
+
+    </h5>
+
+    <p>
+
+        Bitcoin Price Prediction Using Long Short-Term Memory (LSTM)
+
+    </p>
+
+    <small>
+
+        Developed by Kevin Wijaya • Universitas Gunadarma • 2026
+
+    </small>
+
+</footer>
+
+<hr>
+
+<div class="text-center text-muted">
+
+    <small>
+
+        Bitcoin AI Dashboard Version 1.0
+
+    </small>
+
+</div>
+
+{% endblock %}

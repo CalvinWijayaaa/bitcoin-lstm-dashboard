@@ -1,0 +1,12 @@
+Model Evaluation Result
+=======================
+
+MAE  : 7494.94
+MSE  : 81194402.75
+RMSE : 9010.79
+MAPE : 7.98%
+
+Kesimpulan:
+Model LSTM mampu memprediksi harga Bitcoin dengan nilai
+MAPE sebesar 7.98%, sehingga termasuk kategori
+"Sangat Baik" karena MAPE < 10%.

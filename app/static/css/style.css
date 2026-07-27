@@ -1,0 +1,129 @@
+body{
+
+    background:#f5f7fb;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.navbar{
+
+    background:#111827;
+
+}
+
+.dashboard-card{
+
+    border:none;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.dashboard-card h6{
+
+    color:gray;
+
+    text-transform:uppercase;
+
+}
+
+.dashboard-card h3{
+
+    margin-top:15px;
+
+    font-weight:bold;
+
+}
+
+.insight-card{
+
+    border:none;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.history-card{
+
+    border:none;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.dashboard-card{
+
+    min-height: 150px;
+
+    transition: all .3s ease;
+
+    cursor: default;
+
+}
+
+.dashboard-card:hover{
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 25px rgba(0,0,0,.15);
+
+}
+
+.insight-card,
+.history-card{
+
+    transition: all .3s ease;
+
+}
+
+.insight-card:hover,
+.history-card:hover{
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 20px rgba(0,0,0,.12);
+
+}
+
+.table tbody tr{
+
+    transition:.2s;
+
+}
+
+.table tbody tr:hover{
+
+    background:#f8f9fa;
+
+}
+
+.dashboard-card{
+
+    border-radius:15px;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.card{
+
+    border-radius:18px;
+
+}
