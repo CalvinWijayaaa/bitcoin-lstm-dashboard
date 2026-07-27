@@ -1,16 +1,24 @@
 import pymysql
 import pandas as pd
+import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 DB_CONFIG = {
-    "host": "localhost",
-    "user": "root",
-    "password": "",
-    "database": "db_bitcoin_lstm",
-    "cursorclass": pymysql.cursors.DictCursor
+    "host": os.getenv("DB_HOST"),
+    "port": int(os.getenv("DB_PORT", "4000")),
+    "user": os.getenv("DB_USER"),
+    "password": os.getenv("DB_PASSWORD"),
+    "database": os.getenv("DB_NAME"),
+    "cursorclass": pymysql.cursors.DictCursor,
+    "ssl": {
+        "ca": str(BASE_DIR / "isrgrootx1.pem")
+    }
 }
 
 def get_prediction_result():
@@ -113,6 +121,7 @@ def save_prediction(data):
         sql = """
         INSERT INTO prediction_history
         (
+            id,
             prediction_date,
             last_data_date,
             prediction_for_date,
@@ -126,13 +135,21 @@ def save_prediction(data):
 
         VALUES
         (
-            %s,%s,%s,%s,%s,%s,%s,%s,%s
+            %s,%s,%s,%s,%s,%s,%s,%s,%s,%s
         )
         """
+        
+        cursor.execute("""
+        SELECT COALESCE(MAX(id),0)+1 AS next_id
+        FROM prediction_history
+        """)
+
+        next_id = cursor.fetchone()["next_id"]
 
         cursor.execute(
             sql,
             (
+                next_id,
                 datetime.now(),
                 data["last_data_date"],
                 data["prediction_for_date"],
