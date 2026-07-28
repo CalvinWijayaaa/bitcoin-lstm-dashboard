@@ -48,6 +48,7 @@ def connect_db():
     return pymysql.connect(**DB_CONFIG)
 
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 
 def save_prediction(data):
@@ -98,7 +99,7 @@ def save_prediction(data):
         cursor.execute(
             sql,
             (
-                datetime.now(),
+                datetime.now(ZoneInfo("Asia/Jakarta")),
                 data["last_data_date"],
                 data["last_price"],
                 data["prediction"],
@@ -150,7 +151,7 @@ def save_prediction(data):
             sql,
             (
                 next_id,
-                datetime.now(),
+                datetime.now(ZoneInfo("Asia/Jakarta")),
                 data["last_data_date"],
                 data["prediction_for_date"],
                 data["last_price"],
