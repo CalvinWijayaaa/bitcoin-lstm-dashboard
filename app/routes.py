@@ -146,6 +146,10 @@ def register_routes(app):
 
             prediction = get_prediction()
 
+            print("=" * 60)
+            print(prediction)
+            print("=" * 60)
+
             save_prediction(prediction)
 
             flash(
