@@ -9,6 +9,7 @@ from flask import (
 
 
 from app.predictor import get_prediction
+from services.automation import run_pipeline
 
 from app.database import (
     get_latest_prediction,
@@ -144,13 +145,11 @@ def register_routes(app):
 
         try:
 
-            prediction = get_prediction()
-
             print("=" * 60)
-            print(prediction)
+            print("RUN PIPELINE FROM BUTTON")
             print("=" * 60)
 
-            save_prediction(prediction)
+            run_pipeline(force=True)
 
             flash(
                 "Prediction completed successfully.",
