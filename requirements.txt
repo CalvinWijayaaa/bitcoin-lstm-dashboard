@@ -44,13 +44,16 @@ plotly==6.8.0
 protobuf==7.35.1
 pycparser==3.0
 Pygments==2.20.0
+PyMySQL==1.2.0
 pyparsing==3.3.2
 python-dateutil==2.9.0.post0
+python-dotenv==1.2.2
 pytz==2026.2
 requests==2.34.2
 rich==15.0.0
 scikit-learn==1.9.0
 scipy==1.17.1
+seaborn==0.13.2
 six==1.17.0
 soupsieve==2.8.4
 tensorflow==2.21.0
@@ -63,4 +66,3 @@ websockets==16.0
 Werkzeug==3.1.8
 wrapt==2.2.2
 yfinance==1.5.1
-gunicorn
