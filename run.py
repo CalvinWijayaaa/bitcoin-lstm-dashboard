@@ -33,8 +33,15 @@ except Exception as e:
     print(e)
     print("Application will continue without automation.")
     print("=" * 60)
-
-register_routes(app)
+    
+try:
+    print("REGISTER ROUTES")
+    register_routes(app)
+    print("REGISTER ROUTES DONE")
+except Exception as e:
+    print("ERROR REGISTER ROUTES")
+    print(e)
+    raise
 
 if __name__ == "__main__":
     app.run(
